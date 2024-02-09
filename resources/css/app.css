@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+
+    .light {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+
+        &.red {
+            background-color: red;
+            &.active {
+                box-shadow: 0 0 20px red;
+            }
+        }
+
+        &.yellow {
+            background-color: yellow;
+            &.active {
+                box-shadow: 0 0 20px yellow;
+            }
+        }
+
+        &.green {
+            background-color: green;
+            &.active {
+                box-shadow: 0 0 20px green;
+            }
+        }
+    }
+}
+
+.forward-button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.logs {
+    text-align: center;
+    margin-top: 20px;
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    }
+}
